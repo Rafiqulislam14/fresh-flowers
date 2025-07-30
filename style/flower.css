@@ -15,6 +15,7 @@
 .navbar, .full-banner, .badge{
     max-width: 1440px;
     margin: 0 auto;
+    
 }
 
 /* dark02 */
@@ -70,7 +71,7 @@
   text-decoration: none;
   font-weight: 500;
 }
-.nav-item {
+.nav-item{
     list-style: none;
     margin-right: 30px;
 }
@@ -205,14 +206,23 @@
 }
 .back-img-dep{
     display: grid;
-    /* gap: 20px; */
-    margin-bottom: 5px;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    color: white;
-    
+    color: white
 }
 
+.back-img-dep button{
+    background-color: #868080;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold
+}
+.back-img-dep h3 {
+    padding-bottom: 20px;
+}
 /* Join the colorful Bunch */
 .Join-section{
     background-size: cover;
@@ -269,12 +279,76 @@ footer{
     margin: 0 5px;
 }
 
+.full-banner .badge{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header header  header  header "
+    "navbar main    main    navbar "
+    "navbar main    main    navbar"
+    "footer footer  footer  footer"
+    ;
+}
+
 /* media query */
 @media screen and (max-width:576px) {
-    
+    .work-sans-font .full-banner{
+        min-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .full-banner{
+        grid-template-areas: 
+        "header"
+        "navbar"
+        "main"
+        "container"
+        "section"
+        "Join-section"
+        "footer"
+        ;
+    }
+     .Join-section{
+        height: 276px;
+        left: 0px;
+        width: 393px;
+     }
+    .container{
+        display: inline;
+        text-align: ;
+        width: 100%;
+        height: 396px;
+    }
+    .footer-content{
+        display: grid;
+    }
+    .back-img-dep{
+        display: inline;
+        width: 361px;
+        height: 184.5px;
+    }
+
+    .product-grid{
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 /* medium size device */
 @media screen and (min-width:576px) amd (max-width:992px){
+
     
 }
+
+
+/* Frame 27171 */
+
+position: absolute;
+width: 393px;
+height: 276px;
+left: 0px;
+top: 3464.5px;
+
+background: #FFFFFF;
+
